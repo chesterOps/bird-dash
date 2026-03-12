@@ -21,7 +21,7 @@ public class Spawner : MonoBehaviour
             GameObject _blockContainer = ObjectPool.instance.GetBlockContainer();
             if (_blockContainer != null)
             {
-                Vector3 blockPosition = new(12f, Random.Range(1.7f, -0.4f), 0);
+                Vector3 blockPosition = new(13f, Random.Range(1.7f, -0.4f), 0);
                 _blockContainer.transform.position = blockPosition;
                 _blockContainer.SetActive(true);
             }
